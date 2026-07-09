@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — 玄圓坊</title>
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="index.html" class="brand-mark">
+      <img src="images/logo.png" alt="玄圓坊">
+      玄圓坊
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-decor" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none">
+        <circle cx="200" cy="200" r="180" stroke="rgba(242,239,232,0.12)" stroke-width="1"/>
+        <circle cx="200" cy="200" r="128" stroke="var(--gold-soft)" stroke-width="1" opacity="0.35"/>
+        <circle cx="72" cy="200" r="3.5" fill="var(--gold-soft)"/>
+      </svg>
+    </div>
+    <div class="eyebrow">Contact</div>
+    <h1>Every engagement begins with a <em style="font-style:italic;color:var(--gold-soft);">conversation</em>.</h1>
+    <div class="cn-sub">玄圓坊 · 聯絡我們</div>
+    <p class="lede">Tell us a little about your situation. We'll respond privately to discuss whether, and how, we can help.</p>
+  </div>
+</section>
+
+<section class="contact" style="padding-top:20px;">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="section-eyebrow">Get in touch</div>
+      <div class="contact-title">開始一段對話</div>
+      <p class="contact-sub">Discretion is standard practice. All enquiries are treated in confidence.</p>
+
+      <div class="contact-details">
+        <div class="cd-item">
+          <span class="cd-label">Email</span>
+          hello@xuanyuanfang.com
+        </div>
+        <div class="cd-item">
+          <span class="cd-label">Response time</span>
+          Within two business days
+        </div>
+        <div class="cd-item">
+          <span class="cd-label">Consultations</span>
+          By appointment only, in person or remote
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message received';">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+      </div>
+      <div class="field">
+        <label for="interest">Area of interest</label>
+        <select id="interest" name="interest">
+          <option value="">Select an area (optional)</option>
+          <option>Strategic Advisory</option>
+          <option>Life &amp; Career Planning</option>
+          <option>Project &amp; Site Consulting</option>
+          <option>Applied Metaphysics</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">A brief note on what you'd like to discuss</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your situation"></textarea>
+      </div>
+      <button type="submit" class="btn">Send inquiry
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      </button>
+      <div class="contact-note">Enquiries are typically answered within two business days.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-main">
+    <div class="footer-brand">
+      <div class="brand-mark">
+        <img src="images/logo-gold.png" alt="玄圓坊">
+        玄圓坊
+      </div>
+      <p>Strategic and metaphysical advisory, built on classical frameworks and modern judgement.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@xuanyuanfang.com">hello@xuanyuanfang.com</a></li>
+        <li>By appointment only</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <div>&copy; 2026 玄圓坊. All rights reserved.</div>
+    <div>Discretion is standard practice.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
