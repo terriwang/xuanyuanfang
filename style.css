@@ -283,35 +283,44 @@ section{ padding:140px 0; position:relative; }
 
 /* ---------- PROCESS / HOW WE WORK ---------- */
 .process{
-  background-color:var(--paper);
+  background-color:var(--navy-deep);
+  overflow:hidden;
   background-image:
-    linear-gradient(rgba(242,239,232,0.93), rgba(242,239,232,0.93)),
+    linear-gradient(rgba(11,21,36,0.94), rgba(11,21,36,0.94)),
     url('images/section-bg.jpg');
   background-size:cover, cover;
   background-position:center, center 70%;
   background-repeat:no-repeat, no-repeat;
 }
+.process .section-eyebrow{ color:var(--gold-soft); }
+.process .section-title{ color:var(--paper); }
+.process-logo-mark{
+  position:absolute; top:38%; right:8%; width:min(360px, 30vw); height:min(360px, 30vw);
+  pointer-events:none; z-index:0; opacity:0.1;
+}
+.process-logo-mark img{ width:100%; height:100%; object-fit:contain; }
+@media (max-width:900px){ .process-logo-mark{ display:none; } }
 .process-list{
   margin-top:20px; position:relative;
 }
 .process-list::before{
   content:''; position:absolute; left:29px; top:14px; bottom:14px; width:1px;
-  background:var(--line);
+  background:rgba(242,239,232,0.16);
 }
 .process-step{
   display:grid; grid-template-columns:60px 1fr; gap:32px;
   padding:34px 0; position:relative;
 }
 .process-num{
-  width:60px; height:60px; border-radius:50%; border:1px solid var(--gold);
+  width:60px; height:60px; border-radius:50%; border:1px solid var(--gold-soft);
   display:flex; align-items:center; justify-content:center;
-  font-family:var(--serif-en); font-size:19px; color:var(--gold);
-  background:var(--paper); position:relative; z-index:1; flex-shrink:0;
+  font-family:var(--serif-en); font-size:19px; color:var(--gold-soft);
+  background:var(--navy-deep); position:relative; z-index:1; flex-shrink:0;
 }
 .process-copy h3{
-  font-family:var(--serif-cn); font-size:21px; font-weight:500; color:var(--navy-deep); margin-bottom:10px;
+  font-family:var(--serif-cn); font-size:21px; font-weight:500; color:var(--paper); margin-bottom:10px;
 }
-.process-copy p{ font-size:15px; color:var(--ink); opacity:0.75; max-width:520px; }
+.process-copy p{ font-size:15px; color:rgba(242,239,232,0.62); max-width:520px; }
 
 @media (max-width:600px){
   .process-step{ grid-template-columns:44px 1fr; gap:20px; }
