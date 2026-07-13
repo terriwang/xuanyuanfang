@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us — 玄圓坊</title>
+<title>關於我們 — 玄圓坊</title>
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +19,10 @@
       玄圓坊
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">首頁</a>
+      <a href="about.html" class="active">關於我們</a>
+      <a href="services.html">服務項目</a>
+      <a href="contact.html">聯絡我們</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -34,32 +34,41 @@
   <div class="wrap">
     <div class="page-hero-decor" aria-hidden="true">
       <svg viewBox="0 0 400 400" fill="none">
-        <circle cx="200" cy="200" r="180" stroke="rgba(242,239,232,0.12)" stroke-width="1"/>
-        <circle cx="200" cy="200" r="128" stroke="var(--gold-soft)" stroke-width="1" opacity="0.35"/>
-        <circle cx="72" cy="200" r="3.5" fill="var(--gold-soft)"/>
+        <circle class="orbit-ring" cx="200" cy="200" r="180"/>
+        <circle class="orbit-ring gold arc-draw" cx="200" cy="200" r="140"/>
+        <circle class="orbit-ring" cx="200" cy="200" r="95"/>
+        <g class="orbit-spin-mid" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="380" cy="200" r="3"/>
+        </g>
+        <g class="orbit-spin-slow" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="200" cy="60" r="2.5"/>
+        </g>
+        <g class="orbit-spin-fast" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="200" cy="105" r="2" opacity="0.7"/>
+        </g>
       </svg>
     </div>
-    <div class="eyebrow">About Us</div>
-    <h1>Vision, judgement, and a decade of <em style="font-style:italic;color:var(--gold-soft);">practice</em>.</h1>
-    <div class="cn-sub">玄圓坊 · 關於我們</div>
-    <p class="lede">玄圓坊 exists to bring structure to decisions that feel too complex, too personal, or too high-stakes to leave to instinct alone.</p>
+    <div class="eyebrow">關於我們</div>
+    <h1>願景、判斷力，以及十年的<em style="font-style:normal;color:var(--gold-soft);">實踐</em>累積。</h1>
+    <div class="cn-sub">Vision &amp; Practice</div>
+    <p class="lede">玄圓坊的存在，是為了替那些過於複雜、過於私人，或風險過高、不宜單憑直覺判斷的決定，帶來清晰的結構。</p>
   </div>
 </section>
 
 <section class="philosophy">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="section-eyebrow">Vision</div>
-      <h2 class="section-title">Why we exist.</h2>
+      <div class="section-eyebrow">願景</div>
+      <h2 class="section-title">我們為何存在。</h2>
     </div>
     <div class="philosophy-grid">
       <div class="reveal">
-        <p>Most people encounter classical Chinese metaphysics as folklore — interesting, perhaps decorative, rarely something a serious organisation would build a strategy around. We started 玄圓坊 to challenge that assumption.</p>
-        <p>These frameworks were, in their own time, the analytical tools of statesmen, generals, and merchants making decisions with real consequences. We treat them the same way today: as structured, testable methods for understanding timing, position, and risk — sitting alongside, not instead of, conventional strategic thinking.</p>
-        <p>Our long-term vision is a practice that moves fluidly between boardroom and personal counsel — equally comfortable advising on a project's timing as on a life decision — because the underlying discipline of judgement is the same in both.</p>
+        <p>多數人接觸中國古典玄學時，只當作民間傳說——或許有趣，或許只是裝飾，卻鮮少有人相信，一間認真的機構會以此為策略根基。我們創立玄圓坊，正是要挑戰這個假設。</p>
+        <p>這些方法在當時，曾是政治家、將領與商人用來做出攸關重大決策的分析工具。我們今日仍以同樣的態度看待它們：作為理解時機、方位與風險的結構化、可驗證方法——與現代策略思維並行，而非取代。</p>
+        <p>我們的長遠願景，是打造一個能自在游走於董事會與個人諮詢之間的顧問實踐——無論是為項目的時機提供建議，或是為人生的決定提供指引，背後所需的判斷力本質相同。</p>
       </div>
       <div class="reveal quote-block">
-        <p>&ldquo;We are building a practice for people who want a second, disciplined perspective — not a prediction, and not a performance.&rdquo;</p>
+        <p>&ldquo;我們正在打造的，是為那些渴望第二種嚴謹視角的人所服務的顧問實踐——不是預言，也不是表演。&rdquo;</p>
       </div>
     </div>
   </div>
@@ -68,24 +77,24 @@
 <section class="values">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="section-eyebrow">Values</div>
-      <h2 class="section-title">What we hold to, in every engagement.</h2>
+      <div class="section-eyebrow">核心價值</div>
+      <h2 class="section-title">我們在每一次合作中堅持的原則。</h2>
     </div>
     <div class="value-grid reveal">
       <div class="value-item">
         <div class="v-num">I.</div>
-        <h3>Discretion</h3>
-        <p>Every engagement is confidential by default. We are advisors, not commentators — our clients' decisions are their own to share, or not.</p>
+        <h3>保密</h3>
+        <p>每一次合作皆預設保密。我們是顧問，不是評論者——客戶的決定，由客戶自己決定是否分享。</p>
       </div>
       <div class="value-item">
         <div class="v-num">II.</div>
-        <h3>Rigour</h3>
-        <p>Classical frameworks are applied with discipline and cross-checked against real-world context — never offered as a substitute for due diligence.</p>
+        <h3>嚴謹</h3>
+        <p>經典方法的運用講求紀律，並與現實情境反覆核對——絕不作為盡職調查的替代品。</p>
       </div>
       <div class="value-item">
         <div class="v-num">III.</div>
-        <h3>Long-term partnership</h3>
-        <p>The questions that matter most rarely resolve in a single conversation. We favour ongoing relationships over one-off readings.</p>
+        <h3>長期夥伴關係</h3>
+        <p>真正重要的問題，很少能在一次對話中解決。我們重視持續的合作關係，而非一次性的占算。</p>
       </div>
     </div>
   </div>
@@ -94,8 +103,8 @@
 <section id="founder" class="founder">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="section-eyebrow">Experience</div>
-      <h2 class="section-title">Founder background.</h2>
+      <div class="section-eyebrow">經歷</div>
+      <h2 class="section-title">創辦人背景。</h2>
     </div>
     <div class="founder-grid">
       <div class="reveal founder-mark">
@@ -105,34 +114,34 @@
         </svg>
       </div>
       <div class="reveal founder-copy">
-        <div class="founder-name">Principal Consultant</div>
-        <p>Our founder's practice began over a decade ago, at the intersection of two disciplines rarely taught together: classical Chinese metaphysics and modern organisational strategy. That combination remains the foundation of every engagement at 玄圓坊.</p>
-        <p>Trained through years of formal study in BaZi, Qi Men Dun Jia, and Feng Shui under established lineage practitioners, and shaped further by direct commercial experience advising developers, executives, and family businesses across the Asia-Pacific region.</p>
-        <p>The conviction behind 玄圓坊 is straightforward: the frameworks are only as valuable as the judgement applied to them. That judgement is built from years of client work — private consultations, project reviews, and long-term advisory relationships — not from theory alone.</p>
-        <div class="founder-signoff">Available for private consultation, by appointment.</div>
+        <div class="founder-name">首席顧問</div>
+        <p>創辦人的實踐始於十多年前，立足於兩門鮮少被一同教授的學問交會處：中國古典玄學與現代組織策略。這樣的結合，至今仍是玄圓坊每一次合作的根基。</p>
+        <p>師承正統傳承者，正式修習八字、奇門遁甲與風水多年，並在為地產發展商、企業高層與家族企業提供諮詢的實務經驗中，進一步磨練所學。</p>
+        <p>玄圓坊背後的信念很簡單：方法的價值，取決於運用它的判斷力。而這份判斷力，來自多年的實務積累——私人諮詢、項目評估、長期顧問關係——而非僅僅出自理論。</p>
+        <div class="founder-signoff">接受私人諮詢預約。</div>
       </div>
     </div>
 
     <div class="timeline reveal" style="margin-top:90px;">
       <div class="timeline-row">
-        <div class="t-year">Foundations</div>
+        <div class="t-year">根基養成</div>
         <div class="t-copy">
-          <h4>Formal study</h4>
-          <p>Years of structured training in BaZi, Qi Men Dun Jia, and Feng Shui under established lineage practitioners, alongside continued independent research.</p>
+          <h4>正式修習</h4>
+          <p>師承正統傳承者，多年系統性修習八字、奇門遁甲與風水，並持續進行獨立研究。</p>
         </div>
       </div>
       <div class="timeline-row">
-        <div class="t-year">Practice</div>
+        <div class="t-year">實務歷練</div>
         <div class="t-copy">
-          <h4>Commercial advisory</h4>
-          <p>Direct experience advising developers, executives, and family enterprises across the Asia-Pacific region on strategy, timing, and site selection.</p>
+          <h4>商業顧問經驗</h4>
+          <p>為亞太地區的地產發展商、企業高層與家族企業，就策略、時機與選址提供直接顧問建議。</p>
         </div>
       </div>
       <div class="timeline-row">
-        <div class="t-year">Today</div>
+        <div class="t-year">如今</div>
         <div class="t-copy">
           <h4>玄圓坊</h4>
-          <p>A dedicated practice combining classical analysis and modern strategic counsel — built for long-term partnership rather than one-off consultation.</p>
+          <p>結合經典分析與現代策略諮詢的專屬顧問實踐——為長期夥伴關係而生，而非一次性諮詢。</p>
         </div>
       </div>
     </div>
@@ -141,11 +150,11 @@
 
 <section class="cta-banner">
   <div class="wrap" style="text-align:center;">
-    <div class="cta-eyebrow reveal in-view">Ready when you are</div>
+    <div class="cta-eyebrow reveal in-view">準備好了嗎</div>
     <h2 class="cta-title reveal in-view">開始一段對話</h2>
-    <p class="cta-sub reveal in-view">Every engagement begins with a private conversation.</p>
+    <p class="cta-sub reveal in-view">每一次合作，都從一次私密的對話開始。</p>
     <div class="cta-buttons reveal in-view">
-      <a class="btn" href="contact.html">Get in touch
+      <a class="btn" href="contact.html">聯絡我們
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -159,28 +168,28 @@
         <img src="images/logo-gold.png" alt="玄圓坊">
         玄圓坊
       </div>
-      <p>Strategic and metaphysical advisory, built on classical frameworks and modern judgement.</p>
+      <p>策略與玄學顧問，結合經典分析方法與現代判斷力。</p>
     </div>
     <div class="footer-col">
-      <h4>Explore</h4>
+      <h4>探索</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="services.html">服務項目</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4>聯絡方式</h4>
       <ul>
         <li><a href="mailto:hello@xuanyuanfang.com">hello@xuanyuanfang.com</a></li>
-        <li>By appointment only</li>
+        <li>採預約制</li>
       </ul>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <div>&copy; 2026 玄圓坊. All rights reserved.</div>
-    <div>Discretion is standard practice.</div>
+    <div>&copy; 2026 玄圓坊．版權所有</div>
+    <div>保密為我們的基本原則。</div>
   </div>
 </footer>
 

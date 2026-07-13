@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — 玄圓坊</title>
+<title>聯絡我們 — 玄圓坊</title>
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +19,10 @@
       玄圓坊
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="services.html">服務項目</a>
+      <a href="contact.html" class="active">聯絡我們</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -34,69 +34,80 @@
   <div class="wrap">
     <div class="page-hero-decor" aria-hidden="true">
       <svg viewBox="0 0 400 400" fill="none">
-        <circle cx="200" cy="200" r="180" stroke="rgba(242,239,232,0.12)" stroke-width="1"/>
-        <circle cx="200" cy="200" r="128" stroke="var(--gold-soft)" stroke-width="1" opacity="0.35"/>
-        <circle cx="72" cy="200" r="3.5" fill="var(--gold-soft)"/>
+        <circle class="orbit-ring" cx="200" cy="200" r="180"/>
+        <circle class="orbit-ring gold arc-draw" cx="200" cy="200" r="140"/>
+        <circle class="orbit-ring" cx="200" cy="200" r="95"/>
+        <g class="orbit-spin-mid" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="380" cy="200" r="3"/>
+        </g>
+        <g class="orbit-spin-slow" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="200" cy="60" r="2.5"/>
+        </g>
+        <g class="orbit-spin-fast" style="transform-origin:200px 200px;">
+          <circle class="orbit-dot" cx="200" cy="105" r="2" opacity="0.7"/>
+        </g>
       </svg>
     </div>
-    <div class="eyebrow">Contact</div>
-    <h1>Every engagement begins with a <em style="font-style:italic;color:var(--gold-soft);">conversation</em>.</h1>
-    <div class="cn-sub">玄圓坊 · 聯絡我們</div>
-    <p class="lede">Tell us a little about your situation. We'll respond privately to discuss whether, and how, we can help.</p>
+    <div class="eyebrow">聯絡我們</div>
+    <h1>每一次合作，都始於一場<em style="font-style:normal;color:var(--gold-soft);">對話</em>。</h1>
+    <div class="cn-sub">Get in Touch</div>
+    <p class="lede">請簡單告訴我們您的狀況，我們將以私密的方式回覆，討論是否能夠、以及如何提供協助。</p>
   </div>
 </section>
 
 <section class="contact" style="padding-top:20px;">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <div class="section-eyebrow">Get in touch</div>
+      <div class="section-eyebrow">聯絡方式</div>
       <div class="contact-title">開始一段對話</div>
-      <p class="contact-sub">Discretion is standard practice. All enquiries are treated in confidence.</p>
+      <p class="contact-sub">保密是我們的基本原則。所有諮詢皆以保密方式處理。</p>
 
       <div class="contact-details">
         <div class="cd-item">
-          <span class="cd-label">Email</span>
+          <span class="cd-label">電子郵件</span>
           hello@xuanyuanfang.com
         </div>
         <div class="cd-item">
-          <span class="cd-label">Response time</span>
-          Within two business days
+          <span class="cd-label">回覆時間</span>
+          兩個工作天內
         </div>
         <div class="cd-item">
-          <span class="cd-label">Consultations</span>
-          By appointment only, in person or remote
+          <span class="cd-label">諮詢方式</span>
+          採預約制，可親臨或遠端進行
         </div>
       </div>
     </div>
 
-    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message received';">
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='已收到訊息';">
       <div class="field">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required>
       </div>
       <div class="field">
-        <label for="email">Email</label>
+        <label for="email">電子郵件</label>
         <input type="email" id="email" name="email" placeholder="you@company.com" required>
       </div>
       <div class="field">
-        <label for="interest">Area of interest</label>
+        <label for="interest">感興趣的服務項目</label>
         <select id="interest" name="interest">
-          <option value="">Select an area (optional)</option>
-          <option>Strategic Advisory</option>
-          <option>Life &amp; Career Planning</option>
-          <option>Project &amp; Site Consulting</option>
-          <option>Applied Metaphysics</option>
-          <option>Not sure yet</option>
+          <option value="">請選擇（可略過）</option>
+          <option>奇門遁甲</option>
+          <option>其他占卜方法</option>
+          <option>風水</option>
+          <option>命理分析</option>
+          <option>數字能量分析</option>
+          <option>流年</option>
+          <option>其他服務</option>
         </select>
       </div>
       <div class="field">
-        <label for="message">A brief note on what you'd like to discuss</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your situation"></textarea>
+        <label for="message">簡述您想討論的事項</label>
+        <textarea id="message" name="message" rows="4" placeholder="請簡單描述您的狀況"></textarea>
       </div>
-      <button type="submit" class="btn">Send inquiry
+      <button type="submit" class="btn">送出諮詢
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
       </button>
-      <div class="contact-note">Enquiries are typically answered within two business days.</div>
+      <div class="contact-note">我們通常會在兩個工作天內回覆您的諮詢。</div>
     </form>
   </div>
 </section>
@@ -108,28 +119,28 @@
         <img src="images/logo-gold.png" alt="玄圓坊">
         玄圓坊
       </div>
-      <p>Strategic and metaphysical advisory, built on classical frameworks and modern judgement.</p>
+      <p>策略與玄學顧問，結合經典分析方法與現代判斷力。</p>
     </div>
     <div class="footer-col">
-      <h4>Explore</h4>
+      <h4>探索</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="services.html">服務項目</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4>聯絡方式</h4>
       <ul>
         <li><a href="mailto:hello@xuanyuanfang.com">hello@xuanyuanfang.com</a></li>
-        <li>By appointment only</li>
+        <li>採預約制</li>
       </ul>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <div>&copy; 2026 玄圓坊. All rights reserved.</div>
-    <div>Discretion is standard practice.</div>
+    <div>&copy; 2026 玄圓坊．版權所有</div>
+    <div>保密為我們的基本原則。</div>
   </div>
 </footer>
 
